@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:id="@android:id/tabcontent">
+           <ImageView
+               android:id="@+id/강아지"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_weight="1"
+               android:src="@drawable/dog"></ImageView>
+           <ImageView
+               android:id="@+id/고양이"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_weight="1"
+               android:src="@drawable/cat"></ImageView>
+           <ImageView
+               android:id="@+id/토끼"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_weight="1"
+               android:src="@drawable/rabbit"></ImageView>
+           <ImageView
+               android:id="@+id/말"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_weight="1"
+               android:src="@drawable/horse"></ImageView>
+
+       </FrameLayout>
+
+       <TabWidget
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#FFFF00"
+           android:id="@android:id/tabs"></TabWidget>
+
+   </LinearLayout>
+
+</TabHost>

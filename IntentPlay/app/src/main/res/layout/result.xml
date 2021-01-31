@@ -1,0 +1,41 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:stretchColumns="0" >
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/tvTop"
+            android:layout_gravity="center"
+            android:layout_span="2"
+            android:text="## 우승 그림 : "
+            android:textSize="15dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/ivTop"
+            android:scaleType="fitCenter"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_span="2"
+            android:src="@drawable/pic1" />
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="돌아가기" />
+    </TableRow>
+
+</TableLayout>
